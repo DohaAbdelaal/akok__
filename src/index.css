@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin './hero.js';
+/* Note: You may need to change the path to fit your project structure */
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+
+@theme {
+  /*primary for the whole theme*/
+  --color-primary: #166534;     /*dark green*/
+  --color-foreground: #374151; /*dark gray*/
+ --color-AkokAccent:#a3c714;  /*limon*/
+  --color-Akok-Gray:#565656;  /*lighter gray */
+  
+ 
+  --color-primary-500: #166534;
+  --color-primary-600: #14532d; /* For hover */
+
+ 
+
+  
+}
+:root {
+  --color-default-200:143 46 24;
+}
