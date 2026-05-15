@@ -9,7 +9,7 @@ import tint from "../assets/Products_Images/hyaluronic-acid-lip-cheek-tint.webp"
 import mascara from "../assets/Products_Images/thickening-lash-brow-mascara.webp";
 import nailSerum from "../assets/Products_Images/nail-growth-serum.webp";
 import bodyMist from "../assets/Products_Images/hair-mist.webp";
-import bodySplash from "../assets/Products_Images/bodySplash.webp";
+import bodySplash from "../assets/Products_Images/body-splash.webp";
 import bodyLotion from "../assets/Products_Images/body-lotion.webp";
 import growthMix from "../assets/Products_Images/hair-growth-oil-mix.webp";
 import makhmariya from "../assets/Products_Images/makhmariya-body.webp";
