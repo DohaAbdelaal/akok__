@@ -1,25 +1,39 @@
+/* English comment: Import Zain (Arabic) and the elegant Italiana + Playfair from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Zain:wght@300;400;700&display=swap');
+
 @import "tailwindcss";
 @plugin './hero.js';
 /* Note: You may need to change the path to fit your project structure */
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 @custom-variant dark (&:is(.dark *));
 
-
 @theme {
   /*primary for the whole theme*/
   --color-primary: #166534;     /*dark green*/
   --color-foreground: #374151; /*dark gray*/
- --color-AkokAccent:#a3c714;  /*limon*/
+  --color-AkokAccent:#a3c714;  /*limon*/
   --color-Akok-Gray:#565656;  /*lighter gray */
   
- 
   --color-primary-500: #166534;
   --color-primary-600: #14532d; /* For hover */
 
- 
-
-  
+  /* English comment: Register the new premium font family combo */
+  --font-display: 'Italiana', 'Zain', serif;
+  --font-sans: 'Zain', sans-serif;
 }
+
 :root {
   --color-default-200:143 46 24;
+}
+
+/* English comment: Apply the main luxury font to all headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 1px; /* English comment: Gives the English text a high-end luxury spacing */
+}
+
+/* English comment: Apply the smooth Zain font to the rest of the website text */
+body, p, span, button, a {
+  font-family: var(--font-sans);
 }
