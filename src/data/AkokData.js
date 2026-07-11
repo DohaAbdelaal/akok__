@@ -15,16 +15,17 @@ import growthMix from "../assets/Products_Images/hair-growth-oil-mix.webp";
 import makhmariya from "../assets/Products_Images/makhmariya-body.webp";
 import maskScrub from "../assets/Products_Images/scrub-mask.webp";
 import iceCreamScrub from "../assets/Products_Images/ice-cream-body-glow-scrub.webp";
-import hairTonic from "../assets/Products_Images/Alovera.webp";//needs to be changed no photos not available
+import hairTonic from "../assets/Products_Images/Alovera.webp"; // Needs to be changed, photos not available
 import sensitiveCleanser from "../assets/Products_Images/pure-balance-cleanser.webp";
 import deodorant from "../assets/Products_Images/deodorant.webp";
-/* AKOK Products Data - Localization Support (AR/EN) */
 
+/* AKOK Products Data - Localization Support (AR/EN) */
 export const products = [
   {
     id: 1,
     name: { ar: "مرطب بذور العنب", en: "Grape Seed Moisturizer" },
     price: 165,
+    category: ["skin"],
     image: grapeSeedMoisturizer,
     hasVariants: false,
     isAvailable: true,
@@ -47,6 +48,7 @@ export const products = [
     id: 2,
     name: { ar: "هير بالم AKOK", en: "Hair Balm AKOK" },
     price: 200,
+    category: ["hair"],
     image: hairBalm,
     hasVariants: false,
     isAvailable: true,
@@ -69,6 +71,7 @@ export const products = [
     id: 3,
     name: { ar: "غسول البشرة الدهنية والمختلطة", en: "Oily & Combined Skin Cleanser" },
     price: 180,
+    category: ["skin"],
     image: olilyCleanser,
     hasVariants: false,
     isAvailable: true,
@@ -90,8 +93,8 @@ export const products = [
   {
     id: 4,
     name: { ar: "سيروم 4*1 الاسكين بوستر", en: "4*1 Skin Booster Serum" },
-    // السعر الأساسي (بداية من)
     price: 200,
+    category: ["skin"],
     image: skinBooster,
     hasVariants: true,
     isAvailable: true,
@@ -108,7 +111,7 @@ export const products = [
       en: "Apply 3 drops on damp skin, massage face and under-eyes until dry, then apply moisturizer."
     },
     ingredients: {
-      ar: "هيالورنيك اسيد، نياسيناميد، الفااربيوتين، فيتامين B5، فيتامين E، خلاصة العرقسوس",
+      ar: "هيالورنيك اسيد، نياسيناميد، الفااربيوتين، فيتامين B5، فيتامين E., خلاصة العرقسوس",
       en: "Hyaluronic Acid, Niacinamide, Alpha Arbutin, Vitamin B5, Vitamin E, Licorice Extract"
     },
     featured: true
@@ -117,25 +120,14 @@ export const products = [
     id: 5,
     name: { ar: "ليب بالم AKOK", en: "Lip Balm AKOK" },
     price: 100,
+    category: ["skin"],
     image: lipBalm,
     hasVariants: true,
     isAvailable: true,
     variants: [
-      { 
-        id: "v5-strawberry", 
-        label: { ar: "أحمر (فراولة)", en: "Red (Strawberry)" }, 
-        isAvailable: true 
-      },
-      { 
-        id: "v5-caramel", 
-        label: { ar: "هافان (كراميل)", en: "Havan (Caramel)" }, 
-        isAvailable: true 
-      },
-      { 
-        id: "v5-coconut", 
-        label: { ar: "أبيض (جوز هند)", en: "White (Coconut)" }, 
-        isAvailable: true 
-      }
+      { id: "v5-strawberry", label: { ar: "أحمر (فراولة)", en: "Red (Strawberry)" }, isAvailable: true },
+      { id: "v5-caramel", label: { ar: "هافان (كراميل)", en: "Havan (Caramel)" }, isAvailable: true },
+      { id: "v5-coconut", label: { ar: "أبيض (جوز هند)", en: "White (Coconut)" }, isAvailable: true }
     ],
     details: {
       ar: "ترطب بعمق، تعالج تشققات الشفايف وتقلل الغمقان مع توريد طبيعي. متوفرة بـ 3 ألوان ونكهات مميزة: أحمر بالفراولة، هافان بالكراميل، وأبيض بجوز الهند.",
@@ -156,6 +148,7 @@ export const products = [
     id: 6,
     name: { ar: "شامبو AKOK", en: "Shampoo AKOK" },
     price: 220,
+    category: ["hair"],
     image: shampoo,
     hasVariants: false,
     isAvailable: true,
@@ -178,6 +171,7 @@ export const products = [
     id: 7,
     name: { ar: "ماسك الترميم", en: "Repairing Mask" },
     price: 220,
+    category: ["hair"],
     image: hairReapairMask,
     hasVariants: false,
     isAvailable: true,
@@ -200,6 +194,7 @@ export const products = [
     id: 8,
     name: { ar: "تنت الخدود والشفاه", en: "Cheek & Lip Tint" },
     price: 100,
+    category: ["skin"],
     image: tint,
     hasVariants: false,
     isAvailable: true,
@@ -208,11 +203,11 @@ export const products = [
       en: "Natural tint with Hyaluronic acid, gives a natural rosy look to skin and lips."
     },
     howToUse: {
-      ar: "يوضع بعد المرطب، وللشفاه يتبع بمرطب لنتائج أفضل.",
+      ar: "يوضع بعد مرطب، وللشفاه يتبع بمرطب لنتائج أفضل.",
       en: "Apply after moisturizer; for lips, follow with balm for best results."
     },
     ingredients: {
-      ar: "هيالورونيك اسيد، فيتامين B5، فيتامين E، جليسيرين",
+      ar: "هيالورونيك اسيد، فيتامين B5، فيتامين E., جليسيرين",
       en: "Hyaluronic Acid, Vitamin B5, Vitamin E, Glycerin"
     },
     capacity: { ar: "10 مل", en: "10 ml" },
@@ -222,6 +217,7 @@ export const products = [
     id: 9,
     name: { ar: "ماسكرا تكثيف الرموش والحواجب", en: "Lash & Brow Thickening Mascara" },
     price: 200,
+    category: ["hair"],
     image: mascara,
     hasVariants: false,
     isAvailable: true,
@@ -244,6 +240,7 @@ export const products = [
     id: 10,
     name: { ar: "سيروم الأظافر", en: "Nail Serum" },
     price: 200,
+    category: ["body"],
     image: nailSerum,
     hasVariants: false,
     isAvailable: true,
@@ -266,6 +263,7 @@ export const products = [
     id: 11,
     name: { ar: "هير اند بادي ميست", en: "Hair & Body Mist" },
     price: 120,
+    category: ["body", "hair"],
     image: bodyMist,
     hasVariants: true,
     isAvailable: true,
@@ -293,6 +291,7 @@ export const products = [
     id: 12,
     name: { ar: "بادي اسبلاش AKOK", en: "Body Splash AKOK" },
     price: 120,
+    category: ["body"],
     image: bodySplash,
     hasVariants: true,
     isAvailable: true,
@@ -320,6 +319,7 @@ export const products = [
     id: 13,
     name: { ar: "لوشن الجسم", en: "Body Lotion" },
     price: 200,
+    category: ["body"],
     image: bodyLotion,
     hasVariants: false,
     isAvailable: true,
@@ -342,6 +342,7 @@ export const products = [
     id: 14,
     name: { ar: "ميكس الإنبات والإطالة", en: "Growth & Length Mix" },
     price: 400,
+    category: ["hair"],
     image: growthMix,
     hasVariants: false,
     isAvailable: true,
@@ -354,7 +355,7 @@ export const products = [
       en: "Oil bath for 1.5-2 hours with a 10-minute scalp massage."
     },
     ingredients: {
-      ar: "أكثر من 12 نوع زيت (خروع، روز ماري، نواة تمر، نعناع..)، فيتامين E",
+      ar: "أكثر من 12 نوع زيت (خروع، روز ماري، نواة تمر، نعناع..), فيتامين E",
       en: "Over 12 oil types (Castor, Rosemary, Date seed, Mint..), Vitamin E"
     },
     capacity: { ar: "125 مل", en: "125 ml" },
@@ -364,6 +365,7 @@ export const products = [
     id: 15,
     name: { ar: "زبدة المخمرية", en: "Makhmariya Butter" },
     price: 120,
+    category: ["body", "hair"],
     image: makhmariya,
     hasVariants: true,
     isAvailable: true,
@@ -391,6 +393,7 @@ export const products = [
     id: 16,
     name: { ar: "ماسك واسكراب 2*1", en: "2*1 Mask & Scrub" },
     price: 175,
+    category: ["skin"],
     image: maskScrub,
     hasVariants: false,
     isAvailable: true,
@@ -413,6 +416,7 @@ export const products = [
     id: 17,
     name: { ar: "اسكراب الآيس كريم", en: "Ice Cream Scrub" },
     price: 275,
+    category: ["body"],
     image: iceCreamScrub,
     hasVariants: false,
     isAvailable: true,
@@ -435,6 +439,7 @@ export const products = [
     id: 18,
     name: { ar: "تونك الإنبات والتساقط", en: "Growth & Anti-hair loss Tonic" },
     price: 450,
+    category: ["hair"],
     image: hairTonic,
     hasVariants: false,
     isAvailable: false,
@@ -457,6 +462,7 @@ export const products = [
     id: 19,
     name: { ar: "غسول البشرة الحساسة والجافة", en: "Sensitive & Dry Skin Cleanser" },
     price: 180,
+    category: ["skin"],
     image: sensitiveCleanser,
     hasVariants: false,
     isAvailable: true,
@@ -469,33 +475,34 @@ export const products = [
       en: "Massage on wet skin in circular motions for a minute, then rinse."
     },
     ingredients: {
-      ar: "فيتامين B5، فيتامين E، خلاصة الصبار، الانتوين",
+      ar: "فيتامين B5، فيتامين E., خلاصة الصبار، الانتوين",
       en: "Vitamin B5, Vitamin E, Aloe Vera extract, Allantoin"
     },
     capacity: { ar: "130 مل", en: "130 ml" },
     featured: false
   },
   {
-  id: 20,
-  name: { ar: "ديودرنت طبيعي مزيل لرائحة العرق", en: "Natural Deodorant" },
-  price: 200, 
-  image: deodorant,
-  hasVariants: false,
-  isAvailable: true,
-  details: {
-    ar: "مزيل عرق طبيعي بمكونات مرطبة وفعالة في التخلص من الروائح الكريهة.",
-    en: "A natural deodorant with moisturizing ingredients effective in eliminating odors."
-  },
-  howToUse: {
-    ar: "يغسل الإبط جيداً ويجفف، ثم توضع طبقة خفيفة. يجب الغسل قبل كل مرة تجديد.",
-    en: "Wash underarms thoroughly and dry before applying a thin layer. Must wash before each reapplication."
-  },
-  ingredients: {
-    ar: "زبدة الشيا، زبدة الكاكاو، شمع النحل، زيت جوز الهند، زيت اللوز الحلو، زيت الليمون، زيت شجرة الشاي، زيت الورد، زيت اللافندر",
-    en: "Shea Butter, Cocoa Butter, Beeswax, Coconut Oil, Sweet Almond Oil, Lemon Oil, Tea Tree Oil, Rose Oil, Lavender Oil"
-  },
-  capacity: { ar: "30 جم", en: "30g" },
-  featured: false
-}
+    id: 20,
+    name: { ar: "ديودرنت طبيعي مزيل لرائحة العرق", en: "Natural Deodorant" },
+    price: 200, 
+    category: ["body"],
+    image: deodorant,
+    hasVariants: false,
+    isAvailable: true,
+    details: {
+      ar: "مزيل عرق طبيعي بمكونات مرطبة وفعالة في التخلص من الروائح الكريهة.",
+      en: "A natural deodorant with moisturizing ingredients effective in eliminating odors."
+    },
+    howToUse: {
+      ar: "يغسل الإبط جيداً ويجفف، ثم توضع طبقة خفيفة. يجب الغسل قبل كل مرة تجديد.",
+      en: "Wash underarms thoroughly and dry before applying a thin layer. Must wash before each reapplication."
+    },
+    ingredients: {
+      ar: "زبدة الشيا، زبدة الكاكاو، شمع النحل، زيت جوز الهند، زيت اللوز الحلو، زيت الليمون، زيت شجرة الشاي، زيت الورد، زيت اللافندر",
+      en: "Shea Butter, Cocoa Butter, Beeswax, Coconut Oil, Sweet Almond Oil, Lemon Oil, Tea Tree Oil, Rose Oil, Lavender Oil"
+    },
+    capacity: { ar: "30 جم", en: "30g" },
+    featured: false
+  }
 ];
 export default products;
