@@ -4,8 +4,13 @@ import ProductCard from "../components/ProductCard";
 import useLang from "../context/useLang";
 
 export default function Products() {
-  const { t } = useLang();
-
+  const { t, lang } = useLang();
+const categories = [
+  { value: "all", label: t.categories.all },
+  { value: "skin", label: t.categories.skin },
+  { value: "hair", label: t.categories.hair },
+  { value: "body", label: t.categories.body },
+];
   // State to manage the active category filter
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -30,17 +35,17 @@ export default function Products() {
       {/* Modern horizontal scrollable category strip */}
       <div className="mb-12 w-full overflow-hidden">
         <div className="flex justify-center items-center gap-2 md:gap-3 lg:gap-4 overflow-x-auto pb-4 px-4 scrollbar-hide">
-          {["all", "skin", "hair", "body"].map((cat) => (
+          {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => setActiveCategory(cat.value)}
               className={`px-7 py-2 md:px-6 md:py-3 lg:px-8 lg:py-3 rounded-full capitalize whitespace-nowrap transition-all duration-300 text-sm md:text-base lg:text-lg font-medium ${
                 activeCategory === cat
                   ? "bg-black text-white shadow-lg"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-700"
               }`}
             >
-              {cat}
+              {cat.label}
             </button>
           ))}
         </div>

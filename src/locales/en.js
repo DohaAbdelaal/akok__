@@ -145,5 +145,11 @@ productDetails: {
     "clearCart": "Clear Cart",
     "orderViaWhatsApp": "Order via WhatsApp",
     "cartIsEmpty": "Your cart is empty"
-  }
+  },
+   categories: {
+      all: "All",
+      hair: "Hair",
+      body: "Body",
+      skin: "Skin",
+    },
 };

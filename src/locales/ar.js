@@ -146,7 +146,12 @@ productDetails: {
     "orderViaWhatsApp": "طلب عبر واتساب",
     "cartIsEmpty": "سلة المشتريات فارغة",
     
-  }
-  
+  },
+  categories: {
+  all: "الكل",
+  hair: "الشعر",
+  body: "الجسم",
+  skin: "البشرة",
+} 
 
 };
